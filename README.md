@@ -93,22 +93,22 @@ Quick sort divides the list of numbers (array) based on a pivot point (number) a
 > 
 > 
 > 
-> Partition(A,p,r)
->     x <- A[p]
->     i <- p-1
->     j <- r+1
->     while (True) {
->         repeat
->             j <- j-1
->         until (A[j] <= x)
->         repeat
->             i <- i+1
->         until (A[i] >= x)
->         if (i A[j]
->         else 
->             return(j)
->     }
-> }
+> Partition(A,p,r)  
+>     x <- A[p]  
+>     i <- p-1  
+>     j <- r+1  
+>     while (True) {  
+>         repeat  
+>             j <- j-1  
+>         until (A[j] <= x)  
+>         repeat  
+>             i <- i+1  
+>         until (A[i] >= x)  
+>         if (i A[j]  
+>         else   
+>             return(j)  
+>     }  
+> }  
 
 
 ### Best Case Scenario
