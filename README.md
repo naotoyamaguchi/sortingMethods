@@ -82,33 +82,34 @@ Not sure...
 Quick sort divides the list of numbers (array) based on a pivot point (number) and creates two seperate arrays; one (we'll call left) that has all numbers that are less, and one (we'll call right) that has all numbers greater than the pivot point. You then call this recursively and merge the left/pivot/rights.
 
 ### Pseudo code
-
-> Quicksort(A,p,r) {  
->     if (p < r) {  
->        q <- Partition(A,p,r)  
->        Quicksort(A,p,q)  
->        Quicksort(A,q+1,r)  
->     }  
-> }  
-> 
-> 
-> 
-> Partition(A,p,r)  
->     x <- A[p]  
->     i <- p-1  
->     j <- r+1  
->     while (True) {  
->         repeat  
->             j <- j-1  
->         until (A[j] <= x)  
->         repeat  
->             i <- i+1  
->         until (A[i] >= x)  
->         if (i A[j]  
->         else   
->             return(j)  
->     }  
-> }  
+``` javascript
+ Quicksort(A,p,r) {  
+     if (p < r) {  
+        q <- Partition(A,p,r)  
+        Quicksort(A,p,q)  
+        Quicksort(A,q+1,r)  
+     }  
+ }  
+ 
+ 
+ 
+ Partition(A,p,r)  
+     x <- A[p]  
+     i <- p-1  
+     j <- r+1  
+     while (True) {  
+         repeat  
+             j <- j-1  
+         until (A[j] <= x)  
+         repeat  
+             i <- i+1  
+         until (A[i] >= x)  
+         if (i A[j]  
+         else   
+             return(j)  
+     }  
+ }  
+ ```
 
 
 ### Best Case Scenario
